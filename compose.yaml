@@ -11,9 +11,9 @@ services:
  
     environment:
 
-      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_ROOT_PASSWORD: YOUR-PASSWORD
 
-      MYSQL_DATABASE: employees
+      MYSQL_DATABASE: YOUR-DATABASE
  
     volumes:
 

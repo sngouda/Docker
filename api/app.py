@@ -9,10 +9,10 @@ def home():
     try:
  
         connection = mysql.connector.connect(
-            host="mysql-db",
+            host="MYSQL-HOST",
             user="root",
-            password="root123",
-            database="employees"
+            password="MYSQL-PASSWORD",
+            database="MYSQL-DATABASE"
         )
  
         cursor = connection.cursor()
