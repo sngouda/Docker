@@ -1,4 +1,4 @@
-DOCKER TASK
+**DOCKER TASK**
 
 Project: Containerize a web service
 
@@ -15,14 +15,20 @@ This drops in app.py (a small web app that serves esc bash orders v1 on its root
 What to build
 In /root/orders-web, produce:
 
-A .dockerignore that excludes at least __pycache__.
-A Dockerfile that:
-builds on python:3.12-slim
-is ordered so requirements.txt is copied and installed with pip before the rest of the source is copied with COPY . .
-creates a non-root user and switches to it so the app does not run as root
-runs the app by default
-A built image tagged orders-web:1.0.
-A running container named orders that publishes host port 8080 to the app's port 8000.
-When it works, curl http://localhost:8080/ returns esc bash orders v1, and the container runs as a non-root user.
+1.A .dockerignore that excludes at least __pycache__.
+
+2.A Dockerfile that:builds on python:3.12-slim
+
+3.is ordered so requirements.txt is copied and installed with pip before the rest of the source is copied with COPY . .
+
+4.creates a non-root user and switches to it so the app does not run as root
+
+5.runs the app by default
+
+6.A built image tagged orders-web:1.0.
+
+7.A running container named orders that publishes host port 8080 to the app's port 8000.
+
+8.When it works, curl http://localhost:8080/ returns esc bash orders v1, and the container runs as a non-root user.
 
 
